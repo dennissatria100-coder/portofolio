@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dennis Satria</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+        <span class="text-2xl font-bold text-purple-600">Portfolio</span>
+        <div class="hidden md:flex gap-8">
+            <a href="#home" class="hover:text-purple-600">Home</a>
+            <a href="#about" class="hover:text-purple-600">Tentang</a>
+            <a href="#skills" class="hover:text-purple-600">Skill</a>
+            <a href="#projects" class="hover:text-purple-600">Proyek</a>
+            <a href="#contact" class="hover:text-purple-600">Kontak</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="gradient-bg min-h-screen flex items-center justify-center text-white pt-16">
+    <div class="text-center max-w-2xl px-6">
+        <h1 class="text-5xl font-bold mb-4">Fullstack Developer</h1>
+        <p class="text-xl mb-6">
+            Siswa SMK Telkom Malang yang fokus membangun website modern & efisien
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#projects" class="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold">
+                Lihat Proyek
+            </a>
+            <a href="#contact" class="border border-white px-6 py-3 rounded-full">
+                Hubungi Saya
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <img src="antareja.jpeg" class="w-64 h-64 rounded-full mx-auto border-4 border-purple-600 object-cover">
+
+        <div>
+            <h2 class="text-3xl font-bold mb-4">Dennis Satria Putra Basuki</h2>
+            <p class="text-gray-600 mb-4">
+                Siswa SMK Telkom Malang yang berfokus pada pengembangan website
+                menggunakan teknologi frontend dan backend modern.
+            </p>
+            <p class="text-gray-600">
+                Terbiasa membuat aplikasi web, memperbaiki bug, dan bekerja dengan database.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">Skill</h2>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+                <h3 class="font-semibold text-lg mb-2">Frontend Development</h3>
+                <p class="text-gray-600">HTML, CSS, JavaScript, Tailwind CSS</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+                <h3 class="font-semibold text-lg mb-2">Backend Development</h3>
+                <p class="text-gray-600">PHP, Node.js, REST API</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+                <h3 class="font-semibold text-lg mb-2">Database Management</h3>
+                <p class="text-gray-600">MySQL, MongoDB</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+                <h3 class="font-semibold text-lg mb-2">UI / UX Design</h3>
+                <p class="text-gray-600">Figma, Responsive Design</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+                <h3 class="font-semibold text-lg mb-2">Version Control</h3>
+                <p class="text-gray-600">Git, GitHub</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow text-center hover:shadow-xl transition">
+                <h3 class="font-semibold text-lg mb-2">Problem Solving</h3>
+                <p class="text-gray-600">Debugging, Optimasi Kode</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-14" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Proyek <span class="text-purple-600">Terkini</span>
+      </h2>
+      <div class="w-24 h-1 bg-purple-600 mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- PROJECT CARD -->  
+      <div data-aos="fade-up"
+        class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2n2icGuX7AYUFHsG1lhEdUkDx4BAJ5mcgAA&s" alt="E-Commerce"
+          class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+
+        <!-- OVERLAY -->
+        <div
+          class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+          <h3 class="text-white text-xl font-semibold mb-2">E-Commerce App</h3>
+          <p class="text-gray-200 text-sm mb-4">Fullstack Web App</p>
+          <div class="flex gap-3">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="100"
+        class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+        <img src="https://marketplace.canva.com/EAD65Zt5t0E/1/0/1600w/canva-kartu-hari-ibu-bunga-oranye-violet-JuwMOMrN4eA.jpg" alt="Inventory"
+          class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+          <h3 class="text-white text-xl font-semibold mb-2">kartu ucapan</h3>
+          <p class="text-gray-200 text-sm">hari ibu</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200"
+        class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+
+        <img src="https://www.jagoanhosting.com/blog/wp-content/uploads/2023/04/contoh-landing-page-tools-market.png" alt="Company Profile"
+          class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+          <h3 class="text-white text-xl font-semibold mb-2">Company Profile</h3>
+          <p class="text-gray-200 text-sm">Landing Page + CMS</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= CONTACT WHATSAPP ================= -->
+<section id="contact" class="py-24 bg-gradient-to-br from-purple-50 via-indigo-50 to-pink-50">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+    <!-- INFO -->
+    <div class="space-y-6 animate-fade-in">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+        Hubungi <span class="text-purple-600">Saya</span>
+      </h2>
+
+      <p class="text-gray-600 text-lg">
+        Ingin bekerja sama atau bertanya?  
+        Hubungi saya langsung melalui WhatsApp untuk respon cepat.
+      </p>
+
+      <div class="flex items-center gap-4">
+        <div
+          class="w-14 h-14 flex items-center justify-center rounded-full bg-green-100 text-green-600 shadow-lg animate-bounce">
+          <i class="fab fa-whatsapp text-3xl"></i>
+        </div>
+        <div>
+          <p class="text-gray-800 font-semibold text-lg">Dennis Moklet</p>
+          <p class="text-gray-500 text-sm">Fast Response • WhatsApp</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <form onsubmit="sendWhatsApp(event)"
+      class="bg-white p-10 rounded-3xl shadow-2xl space-y-6 hover:scale-[1.01] transition">
+
+      <div>
+        <label class="text-sm font-medium text-gray-600">Nama</label>
+        <input id="nama" type="text" placeholder="Masukkan nama kamu" required
+          class="w-full mt-2 p-4 border rounded-xl focus:ring-2 focus:ring-green-500 outline-none transition">
+      </div>
+
+      <div>
+        <label class="text-sm font-medium text-gray-600">Pesan</label>
+        <textarea id="pesan" rows="4" placeholder="Tulis pesan kamu..." required
+          class="w-full mt-2 p-4 border rounded-xl focus:ring-2 focus:ring-green-500 outline-none transition"></textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full flex items-center justify-center gap-3 bg-green-500 text-white py-4 rounded-xl font-semibold text-lg hover:bg-green-600 shadow-lg hover:shadow-xl transition">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        Kirim via WhatsApp
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<!-- SCRIPT WHATSAPP -->
+<script>
+  function sendWhatsApp(event) {
+    event.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const pesan = document.getElementById("pesan").value;
+
+    const nomorWhatsApp = "6282231017559"; 
+    const text = `Halo, saya ${nama}%0A%0A${pesan}`;
+
+    const url = `https://wa.me/${nomorWhatsApp}?text=${text}`;
+    window.open(url, "_blank");
+  }
+</script>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-800 text-white text-center py-6">
+    © 2025 Dennis Satria. All Rights Reserved.
+</footer>
+
+</body>
+</html>

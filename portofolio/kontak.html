@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Contact</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Industrial Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 scroll-smooth">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold text-purple-600">Portfolio</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">Tentang</a>
+                    <a href="#skills" class="text-gray-700 hover:text-purple-600 transition">Keahlian</a>
+                    <a href="#projects" class="text-gray-700 hover:text-purple-600 transition">Proyek</a>
+                    <a href="kontak.html" class="text-gray-700 hover:text-purple-600 transition">Kontak</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-purple-50">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-purple-50">Tentang</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-700 hover:bg-purple-50">Keahlian</a>
+            <a href="#projects" class="block px-4 py-2 text-gray-700 hover:bg-purple-50">Proyek</a>
+            <a href="kontak.html" class="block px-4 py-2 text-gray-700 hover:bg-purple-50">Kontak</a>
+        </div>
+    </nav>
+
+
+<body class="bg-gray-900 text-white transition duration-500">
+
+<!-- DARK MODE TOGGLE -->
+<button onclick="toggleTheme()"
+  class="fixed top-5 right-5 z-50 bg-white/10 backdrop-blur px-4 py-2 rounded-full">
+  🌙 / ☀️
+</button>
+
+<!-- CONTACT SECTION -->
+<section id="contact"
+  class="min-h-screen flex items-center justify-center px-6 opacity-0 translate-y-20 transition-all duration-1000">
+
+<div class="w-full max-w-5xl grid md:grid-cols-2 gap-10">
+
+<!-- SLIDER -->
+<div class="relative overflow-hidden rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl">
+
+  <div id="slides" class="flex transition-transform duration-700">
+
+    <!-- WhatsApp -->
+    <div class="min-w-full p-10 text-center">
+      <div class="text-5xl mb-4">💬</div>
+      <h3 class="text-2xl font-bold">WhatsApp</h3>
+      <p class="text-gray-300 mb-6">Fast & casual discussion</p>
+      <a href="https://wa.me/6282231017559"
+        class="inline-block bg-green-500 hover:bg-green-600 px-8 py-3 rounded-full transition">
+        082231017559
+      </a>
+    </div>
+
+    
+  </div>
+
+  <!-- DOTS -->
+  <div class="flex justify-center gap-2 pb-5">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+<!-- FORM -->
+<div class="rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 p-8 shadow-2xl">
+  <h3 class="text-3xl font-bold mb-6">Send Message</h3>
+
+  <form class="space-y-4">
+    <input type="text" placeholder="Your Name"
+      class="w-full p-3 rounded-xl bg-black/30 border border-white/20 focus:outline-none">
+
+    <input type="email" placeholder="Your Email"
+      class="w-full p-3 rounded-xl bg-black/30 border border-white/20 focus:outline-none">
+
+    <textarea rows="4" placeholder="Your Message"
+      class="w-full p-3 rounded-xl bg-black/30 border border-white/20 focus:outline-none"></textarea>
+
+    <button
+      class="w-full bg-indigo-500 hover:bg-indigo-600 py-3 rounded-xl transition">
+      Send Message 🚀
+    </button>
+  </form>
+</div>
+
+</div>
+</section>
+
+<!-- STYLE -->
+<style>
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #555;
+  border-radius: 9999px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.dot.active {
+  background: #818cf8;
+  width: 22px;
+}
+.light {
+  background: #f9fafb;
+  color: #111;
+}
+</style>
+
+<!-- SCRIPT -->
+<script>
+/* SLIDER */
+let index = 0;
+const slides = document.getElementById("slides");
+const dots = document.querySelectorAll(".dot");
+const total = slides.children.length;
+
+function updateSlide() {
+  slides.style.transform = `translateX(-${index * 100}%)`;
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+setInterval(() => {
+  index = (index + 1) % total;
+  updateSlide();
+}, 4000);
+updateSlide();
+
+/* DOT CLICK */
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    index = i;
+    updateSlide();
+  });
+});
+
+/* SCROLL ANIMATION */
+const section = document.getElementById("contact");
+window.addEventListener("scroll", () => {
+  const pos = section.getBoundingClientRect().top;
+  if (pos < window.innerHeight - 100) {
+    section.classList.remove("opacity-0", "translate-y-20");
+  }
+});
+
+/* THEME */
+function toggleTheme() {
+  document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
